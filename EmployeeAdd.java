@@ -8,13 +8,13 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JTextField;
 
-public class Update  extends JFrame{
+public class EmployeeAdd  extends JFrame{
 
 	JLabel jLabel1,jLabel2,jLabel3,jLabel4;
 	JTextField field1,field2,field3, field4;
 	JButton button1, button2;
 	
-	public Update() {
+	public EmployeeAdd() {
 		// TODO Auto-generated constructor stub
 		setLayout(null);
 		jLabel1 = new JLabel("Name");
@@ -25,13 +25,13 @@ public class Update  extends JFrame{
 		field2 = new JTextField(10);
 		field3 = new JTextField(10);
 		field4 = new JTextField(10);
-		button1 = new JButton("Update");
+		button1 = new JButton("Save");
 		button1.addActionListener(new ActionListener() {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				System.out.println("Update");
+				System.out.println("data Save");
 			}
 		});
 		button2 = new JButton("back");
@@ -72,6 +72,6 @@ public class Update  extends JFrame{
 		setVisible(true);
 	}
 	public static void main(String[] args) {
-		new Update();
+		new EmployeeAdd();
 	}
 }
